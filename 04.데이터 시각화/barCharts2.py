@@ -20,7 +20,7 @@ histogram = Counter(decile(grade) for grade in grades)
 plt.bar([ x for x in histogram.keys()], #막대 표시
          histogram.values(), #각 막대의 높이를 정한다.
          8) #너비 8
-plt.axis([-5, 105, 0, 5]) #x축은 -5부터 105, y축은 0부터 5
+plt.axis([-5, 105, 0, n]) #x축은 -5부터 105, y축은 0부터 n
 
 plt.xticks([10*i for i in range(11)])
 plt.xlabel("Decile")
