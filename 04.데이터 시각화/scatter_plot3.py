@@ -17,7 +17,6 @@ test_2_grades= [ random.randrange(0,100) for i in range(n)]
 plt.scatter(test_1_grades, test_2_grades)
 plt.title("The Axes are comparable")
 
-# x, y 축 시작점을 같게한다.
 # test2에서 대부분의 편차가 발생했다는 사실을 알 수 있다.
 plt.axis('equal')
 
