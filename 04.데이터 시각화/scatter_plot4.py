@@ -16,7 +16,7 @@ test_2_grades= [ random.randrange(0,100) for i in range(n)]
 
 # x축: test_1_grades, y축: test_2_grades
 plt.scatter(test_1_grades, test_2_grades)
-plt.title("Axes aren't comparable") #공정한 비교 불가
+plt.title("The Results") 
 plt.xticks([i*10 for i in range(11)])
 plt.yticks([i*10 for i in range(11)])
 plt.xlabel("test 1 grades")
