@@ -1,0 +1,33 @@
+# 개요
+
+동기들과 점심을 먹으려고하는데 어디에 가야될지 모르겠다.
+
+학교 주변 맛집을 알아보고싶다.
+
+학교는 충청남도 천안시 안서동에 위치해있다.
+
+충남 천안시 안서동에 있는 맛집을 Diningcode를 이용하여 조사해보자.
+
+
+동적웹에서 자동으로 클릭하거나 자동으로 검색하는 기능을 갖는 selenium 라이브러리를 사용한다.
+
+**Selenium 설치하기**<br>
+(방법 1) cmd 창 + 관리자 권한<br>
+`pip install selenium`<br>
+
+(방법 2) Jupyter Notebook 에서 설치<br>
+`!pip install selenium`<br>
+
+**Chrome 웹 driver 설치하기**
+1. 구글 크롬의 버젼을 확인한다. 
+ 닫기창(x) 바로 밑에 설정(...) > 도움말 > Chrome정보 > 버젼확인<br>
+ 작성자 본인의 크롬버젼은 76이다. <br>
+
+
+2. 크롬 드라이버 설치하기
+  (설치 url) https://chromedriver.chromium.org/downloads
+  
+  
+3. 설치하면 현재 주피터노트북의 파일저장 위치와 동일한 위치에 driver이라는 폴더를 생성한다.
+
+4. driver 폴더안에 크롬엔진 실행파일(*.exe)을 넣는다.
