@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2c619b6abbbd492a9e7f5b8feaa3f18f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_2c619b6abbbd492a9e7f5b8feaa3f18f" ></div>
+        
+</body>
+<script>    
+    
+            var map_2c619b6abbbd492a9e7f5b8feaa3f18f = L.map(
+                "map_2c619b6abbbd492a9e7f5b8feaa3f18f",
+                {
+                    center: [36.8336012, 127.1791657],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3af8cf5ea143469893eb9a6244cd08d6 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_2c619b6abbbd492a9e7f5b8feaa3f18f);
+        
+    
+            var marker_681948be66f245fd8923d9ed0bf53fd4 = L.marker(
+                [36.8336012, 127.1791657],
+                {}
+            ).addTo(map_2c619b6abbbd492a9e7f5b8feaa3f18f);
+        
+    
+            marker_681948be66f245fd8923d9ed0bf53fd4.bindTooltip(
+                `<div>
+                     상명대학교 천안캠퍼스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c37ca094086f4514a81f0580e3b45fc0 = L.circleMarker(
+                [36.8343239, 127.1729509],
+                {"bubblingMouseEvents": true, "color": "#a32767", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#a32767", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2c619b6abbbd492a9e7f5b8feaa3f18f);
+        
+    
+            circle_marker_c37ca094086f4514a81f0580e3b45fc0.bindTooltip(
+                `<div>
+                     마리스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_906eb04ea86a48e68378e7cb9436924a = L.circleMarker(
+                [36.8304567, 127.175887],
+                {"bubblingMouseEvents": true, "color": "#a32767", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#a32767", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2c619b6abbbd492a9e7f5b8feaa3f18f);
+        
+    
+            circle_marker_906eb04ea86a48e68378e7cb9436924a.bindTooltip(
+                `<div>
+                     09학번식당
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_980b9726041646f9b9a24d31ce687944 = L.circleMarker(
+                [36.84063580000001, 127.1766109],
+                {"bubblingMouseEvents": true, "color": "#a32767", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#a32767", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2c619b6abbbd492a9e7f5b8feaa3f18f);
+        
+    
+            circle_marker_980b9726041646f9b9a24d31ce687944.bindTooltip(
+                `<div>
+                     더올드밀
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1983166edad64eafab3f3dcfdb23ec96 = L.circleMarker(
+                [36.8327685, 127.1881166],
+                {"bubblingMouseEvents": true, "color": "#a32767", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#a32767", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2c619b6abbbd492a9e7f5b8feaa3f18f);
+        
+    
+            circle_marker_1983166edad64eafab3f3dcfdb23ec96.bindTooltip(
+                `<div>
+                     오월의숲
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_66fad273ed1548c7b5fe4ea066aa107a = L.circleMarker(
+                [36.8408287, 127.1810442],
+                {"bubblingMouseEvents": true, "color": "#a32767", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#a32767", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2c619b6abbbd492a9e7f5b8feaa3f18f);
+        
+    
+            circle_marker_66fad273ed1548c7b5fe4ea066aa107a.bindTooltip(
+                `<div>
+                     내가찜한닭
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8d6c568a71ae432b9b37b702f6a42404 = L.circleMarker(
+                [36.8393059, 127.1774189],
+                {"bubblingMouseEvents": true, "color": "#a32767", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#a32767", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2c619b6abbbd492a9e7f5b8feaa3f18f);
+        
+    
+            circle_marker_8d6c568a71ae432b9b37b702f6a42404.bindTooltip(
+                `<div>
+                     로씨
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3958608f0e6c4db6937106d5980dc962 = L.circleMarker(
+                [36.8307931, 127.1747445],
+                {"bubblingMouseEvents": true, "color": "#a32767", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#a32767", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2c619b6abbbd492a9e7f5b8feaa3f18f);
+        
+    
+            circle_marker_3958608f0e6c4db6937106d5980dc962.bindTooltip(
+                `<div>
+                     생태나라
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4c0c50cceec94580afbb507fe762a053 = L.circleMarker(
+                [36.8315095, 127.1744946],
+                {"bubblingMouseEvents": true, "color": "#a32767", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#a32767", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2c619b6abbbd492a9e7f5b8feaa3f18f);
+        
+    
+            circle_marker_4c0c50cceec94580afbb507fe762a053.bindTooltip(
+                `<div>
+                     부자전
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4905a7e832be4eaeacde2c5519737b91 = L.circleMarker(
+                [36.8408336, 127.1813637],
+                {"bubblingMouseEvents": true, "color": "#a32767", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#a32767", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2c619b6abbbd492a9e7f5b8feaa3f18f);
+        
+    
+            circle_marker_4905a7e832be4eaeacde2c5519737b91.bindTooltip(
+                `<div>
+                     쪼다쪼림닭
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_bba31af177b9447ebffaa06f5cb824da = L.circleMarker(
+                [36.8328705, 127.1895863],
+                {"bubblingMouseEvents": true, "color": "#a32767", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#a32767", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2c619b6abbbd492a9e7f5b8feaa3f18f);
+        
+    
+            circle_marker_bba31af177b9447ebffaa06f5cb824da.bindTooltip(
+                `<div>
+                     소나무향기
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_89ca36cea5e04159a11e37c8f39c70ef = L.circleMarker(
+                [36.8291701, 127.1838959],
+                {"bubblingMouseEvents": true, "color": "#a32767", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#a32767", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2c619b6abbbd492a9e7f5b8feaa3f18f);
+        
+    
+            circle_marker_89ca36cea5e04159a11e37c8f39c70ef.bindTooltip(
+                `<div>
+                     유박사해장국
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_74eaa84efcb04700bd1a427910be0bb5 = L.circleMarker(
+                [36.8318434, 127.1867217],
+                {"bubblingMouseEvents": true, "color": "#a32767", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#a32767", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2c619b6abbbd492a9e7f5b8feaa3f18f);
+        
+    
+            circle_marker_74eaa84efcb04700bd1a427910be0bb5.bindTooltip(
+                `<div>
+                     선녀아리랑
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1f063bff8d4f49599017c34c2d2b18b5 = L.circleMarker(
+                [36.8282715, 127.1845231],
+                {"bubblingMouseEvents": true, "color": "#a32767", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#a32767", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2c619b6abbbd492a9e7f5b8feaa3f18f);
+        
+    
+            circle_marker_1f063bff8d4f49599017c34c2d2b18b5.bindTooltip(
+                `<div>
+                     슬로우커피
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9218d78f7fb54db0abd0088243208292 = L.circleMarker(
+                [36.8341021, 127.1729208],
+                {"bubblingMouseEvents": true, "color": "#a32767", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#a32767", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2c619b6abbbd492a9e7f5b8feaa3f18f);
+        
+    
+            circle_marker_9218d78f7fb54db0abd0088243208292.bindTooltip(
+                `<div>
+                     카페고메
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_eb9d39309a95417f914e807f6752aaf7 = L.circleMarker(
+                [36.8285834, 127.1841454],
+                {"bubblingMouseEvents": true, "color": "#a32767", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#a32767", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2c619b6abbbd492a9e7f5b8feaa3f18f);
+        
+    
+            circle_marker_eb9d39309a95417f914e807f6752aaf7.bindTooltip(
+                `<div>
+                     주문진
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c1643199e86b4f68a8ec59c5532d052d = L.circleMarker(
+                [36.831317, 127.1789584],
+                {"bubblingMouseEvents": true, "color": "#a32767", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#a32767", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2c619b6abbbd492a9e7f5b8feaa3f18f);
+        
+    
+            circle_marker_c1643199e86b4f68a8ec59c5532d052d.bindTooltip(
+                `<div>
+                     이지향왕냉면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_023866a5ba4a47d99f6c0795031aae98 = L.circleMarker(
+                [36.8392816, 127.1895989],
+                {"bubblingMouseEvents": true, "color": "#a32767", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#a32767", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2c619b6abbbd492a9e7f5b8feaa3f18f);
+        
+    
+            circle_marker_023866a5ba4a47d99f6c0795031aae98.bindTooltip(
+                `<div>
+                     압구정김밥
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e68263ab27bb4b489b4daa13f47634cb = L.circleMarker(
+                [36.8307621, 127.1783433],
+                {"bubblingMouseEvents": true, "color": "#a32767", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#a32767", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2c619b6abbbd492a9e7f5b8feaa3f18f);
+        
+    
+            circle_marker_e68263ab27bb4b489b4daa13f47634cb.bindTooltip(
+                `<div>
+                     수원화로구이
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6433462db28340faa07a8a0cb05886cd = L.circleMarker(
+                [36.8327685, 127.1881166],
+                {"bubblingMouseEvents": true, "color": "#a32767", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#a32767", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2c619b6abbbd492a9e7f5b8feaa3f18f);
+        
+    
+            circle_marker_6433462db28340faa07a8a0cb05886cd.bindTooltip(
+                `<div>
+                     흙사랑
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_aace9b8d79a84b9380104c127fe802a5 = L.circleMarker(
+                [36.8328237, 127.1877438],
+                {"bubblingMouseEvents": true, "color": "#a32767", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#a32767", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2c619b6abbbd492a9e7f5b8feaa3f18f);
+        
+    
+            circle_marker_aace9b8d79a84b9380104c127fe802a5.bindTooltip(
+                `<div>
+                     언덕위커피나무
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9fff38cafc774bc6bc4b171e6d148ae9 = L.circleMarker(
+                [36.8315095, 127.1744946],
+                {"bubblingMouseEvents": true, "color": "#a32767", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#a32767", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2c619b6abbbd492a9e7f5b8feaa3f18f);
+        
+    
+            circle_marker_9fff38cafc774bc6bc4b171e6d148ae9.bindTooltip(
+                `<div>
+                     맛있네탕수육
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a48537a7d71a481091fad54292fa962b = L.circleMarker(
+                [36.8271377, 127.1859543],
+                {"bubblingMouseEvents": true, "color": "#a32767", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#a32767", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2c619b6abbbd492a9e7f5b8feaa3f18f);
+        
+    
+            circle_marker_a48537a7d71a481091fad54292fa962b.bindTooltip(
+                `<div>
+                     산마루손칼국수
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_be9ae068e4b5485aa25a630018f0ee60 = L.circleMarker(
+                [36.8337304, 127.1731299],
+                {"bubblingMouseEvents": true, "color": "#a32767", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#a32767", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2c619b6abbbd492a9e7f5b8feaa3f18f);
+        
+    
+            circle_marker_be9ae068e4b5485aa25a630018f0ee60.bindTooltip(
+                `<div>
+                     동춘옥
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d16e40c6a45346b8bb2f853bf3547aea = L.circleMarker(
+                [36.8377033, 127.1774955],
+                {"bubblingMouseEvents": true, "color": "#a32767", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#a32767", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2c619b6abbbd492a9e7f5b8feaa3f18f);
+        
+    
+            circle_marker_d16e40c6a45346b8bb2f853bf3547aea.bindTooltip(
+                `<div>
+                     오래오래
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d06f2613ccab419a85bd6f9a6395cd8a = L.circleMarker(
+                [36.8320037, 127.1869677],
+                {"bubblingMouseEvents": true, "color": "#a32767", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#a32767", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2c619b6abbbd492a9e7f5b8feaa3f18f);
+        
+    
+            circle_marker_d06f2613ccab419a85bd6f9a6395cd8a.bindTooltip(
+                `<div>
+                     초당골
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f16131834eae449fb4ea0bf465bef9ce = L.circleMarker(
+                [36.8313431, 127.1869601],
+                {"bubblingMouseEvents": true, "color": "#a32767", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#a32767", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2c619b6abbbd492a9e7f5b8feaa3f18f);
+        
+    
+            circle_marker_f16131834eae449fb4ea0bf465bef9ce.bindTooltip(
+                `<div>
+                     산들
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a0264732fc0a4c629a296f45450d2574 = L.circleMarker(
+                [36.8303173, 127.1787942],
+                {"bubblingMouseEvents": true, "color": "#a32767", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#a32767", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2c619b6abbbd492a9e7f5b8feaa3f18f);
+        
+    
+            circle_marker_a0264732fc0a4c629a296f45450d2574.bindTooltip(
+                `<div>
+                     불로만숯불바베큐
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_83365f17b24b4aa7bdb645b63be87f00 = L.circleMarker(
+                [36.83576190000001, 127.1730419],
+                {"bubblingMouseEvents": true, "color": "#a32767", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#a32767", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2c619b6abbbd492a9e7f5b8feaa3f18f);
+        
+    
+            circle_marker_83365f17b24b4aa7bdb645b63be87f00.bindTooltip(
+                `<div>
+                     슬로우커피
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_11a0a19cb05446e88be3d984e510c088 = L.circleMarker(
+                [36.83008710000001, 127.1797787],
+                {"bubblingMouseEvents": true, "color": "#a32767", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#a32767", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2c619b6abbbd492a9e7f5b8feaa3f18f);
+        
+    
+            circle_marker_11a0a19cb05446e88be3d984e510c088.bindTooltip(
+                `<div>
+                     스타벅스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_50363cc00e8b403e9d3ad0984b53545a = L.circleMarker(
+                [36.8327677, 127.1756773],
+                {"bubblingMouseEvents": true, "color": "#a32767", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#a32767", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2c619b6abbbd492a9e7f5b8feaa3f18f);
+        
+    
+            circle_marker_50363cc00e8b403e9d3ad0984b53545a.bindTooltip(
+                `<div>
+                     리프에스프레소
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_81320c9d39284d9cac4739a75edfa610 = L.circleMarker(
+                [36.8343239, 127.1729509],
+                {"bubblingMouseEvents": true, "color": "#51cf40", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#51cf40", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2c619b6abbbd492a9e7f5b8feaa3f18f);
+        
+    
+            circle_marker_81320c9d39284d9cac4739a75edfa610.bindTooltip(
+                `<div>
+                     마리스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_856d9e8420184fcdb431b9480471cd17 = L.circleMarker(
+                [36.8304567, 127.175887],
+                {"bubblingMouseEvents": true, "color": "#51cf40", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#51cf40", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2c619b6abbbd492a9e7f5b8feaa3f18f);
+        
+    
+            circle_marker_856d9e8420184fcdb431b9480471cd17.bindTooltip(
+                `<div>
+                     09학번식당
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b0df83be7a99478d8f0f4d90b6dc3974 = L.circleMarker(
+                [36.84063580000001, 127.1766109],
+                {"bubblingMouseEvents": true, "color": "#51cf40", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#51cf40", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2c619b6abbbd492a9e7f5b8feaa3f18f);
+        
+    
+            circle_marker_b0df83be7a99478d8f0f4d90b6dc3974.bindTooltip(
+                `<div>
+                     더올드밀
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_60ddc26a59974313b4087652fbb524f2 = L.circleMarker(
+                [36.8327685, 127.1881166],
+                {"bubblingMouseEvents": true, "color": "#51cf40", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#51cf40", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2c619b6abbbd492a9e7f5b8feaa3f18f);
+        
+    
+            circle_marker_60ddc26a59974313b4087652fbb524f2.bindTooltip(
+                `<div>
+                     오월의숲
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_bdcb6f58bc5748839db4b06a0b349a6b = L.circleMarker(
+                [36.8408287, 127.1810442],
+                {"bubblingMouseEvents": true, "color": "#51cf40", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#51cf40", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2c619b6abbbd492a9e7f5b8feaa3f18f);
+        
+    
+            circle_marker_bdcb6f58bc5748839db4b06a0b349a6b.bindTooltip(
+                `<div>
+                     내가찜한닭
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7a90bbd4f1a14bad863f870f792e10d5 = L.circleMarker(
+                [36.8393059, 127.1774189],
+                {"bubblingMouseEvents": true, "color": "#51cf40", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#51cf40", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2c619b6abbbd492a9e7f5b8feaa3f18f);
+        
+    
+            circle_marker_7a90bbd4f1a14bad863f870f792e10d5.bindTooltip(
+                `<div>
+                     로씨
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3920ccf996924507937074ea543fcca2 = L.circleMarker(
+                [36.8307931, 127.1747445],
+                {"bubblingMouseEvents": true, "color": "#51cf40", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#51cf40", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2c619b6abbbd492a9e7f5b8feaa3f18f);
+        
+    
+            circle_marker_3920ccf996924507937074ea543fcca2.bindTooltip(
+                `<div>
+                     생태나라
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_22cccb9518754fd7acf0b3750a5d9769 = L.circleMarker(
+                [36.8315095, 127.1744946],
+                {"bubblingMouseEvents": true, "color": "#51cf40", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#51cf40", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2c619b6abbbd492a9e7f5b8feaa3f18f);
+        
+    
+            circle_marker_22cccb9518754fd7acf0b3750a5d9769.bindTooltip(
+                `<div>
+                     부자전
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_efea6ba17afa4b3ab3dd375580525c1e = L.circleMarker(
+                [36.8408336, 127.1813637],
+                {"bubblingMouseEvents": true, "color": "#51cf40", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#51cf40", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2c619b6abbbd492a9e7f5b8feaa3f18f);
+        
+    
+            circle_marker_efea6ba17afa4b3ab3dd375580525c1e.bindTooltip(
+                `<div>
+                     쪼다쪼림닭
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2de04b6137984cbfaf0cfe174ac8dcaa = L.circleMarker(
+                [36.8328705, 127.1895863],
+                {"bubblingMouseEvents": true, "color": "#51cf40", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#51cf40", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2c619b6abbbd492a9e7f5b8feaa3f18f);
+        
+    
+            circle_marker_2de04b6137984cbfaf0cfe174ac8dcaa.bindTooltip(
+                `<div>
+                     소나무향기
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0f9d7350151049fcbb010c4ac1b7e6cd = L.circleMarker(
+                [36.8291701, 127.1838959],
+                {"bubblingMouseEvents": true, "color": "#51cf40", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#51cf40", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2c619b6abbbd492a9e7f5b8feaa3f18f);
+        
+    
+            circle_marker_0f9d7350151049fcbb010c4ac1b7e6cd.bindTooltip(
+                `<div>
+                     유박사해장국
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b2a57096ee0342b99da7b7d3224dd5f2 = L.circleMarker(
+                [36.8318434, 127.1867217],
+                {"bubblingMouseEvents": true, "color": "#51cf40", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#51cf40", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2c619b6abbbd492a9e7f5b8feaa3f18f);
+        
+    
+            circle_marker_b2a57096ee0342b99da7b7d3224dd5f2.bindTooltip(
+                `<div>
+                     선녀아리랑
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5d3d014e845945a18cf50835f937944e = L.circleMarker(
+                [36.8282715, 127.1845231],
+                {"bubblingMouseEvents": true, "color": "#51cf40", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#51cf40", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2c619b6abbbd492a9e7f5b8feaa3f18f);
+        
+    
+            circle_marker_5d3d014e845945a18cf50835f937944e.bindTooltip(
+                `<div>
+                     슬로우커피
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b43fc6e869de4567855c7beb87b26f60 = L.circleMarker(
+                [36.8341021, 127.1729208],
+                {"bubblingMouseEvents": true, "color": "#51cf40", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#51cf40", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2c619b6abbbd492a9e7f5b8feaa3f18f);
+        
+    
+            circle_marker_b43fc6e869de4567855c7beb87b26f60.bindTooltip(
+                `<div>
+                     카페고메
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f1d3394c15614e1996063bfd6ab4c857 = L.circleMarker(
+                [36.8285834, 127.1841454],
+                {"bubblingMouseEvents": true, "color": "#51cf40", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#51cf40", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2c619b6abbbd492a9e7f5b8feaa3f18f);
+        
+    
+            circle_marker_f1d3394c15614e1996063bfd6ab4c857.bindTooltip(
+                `<div>
+                     주문진
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2b1dd8e9b19c4887be1c55519c3b49d1 = L.circleMarker(
+                [36.831317, 127.1789584],
+                {"bubblingMouseEvents": true, "color": "#51cf40", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#51cf40", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2c619b6abbbd492a9e7f5b8feaa3f18f);
+        
+    
+            circle_marker_2b1dd8e9b19c4887be1c55519c3b49d1.bindTooltip(
+                `<div>
+                     이지향왕냉면
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ef8e5667cf984e1f98906534d92b1498 = L.circleMarker(
+                [36.8392816, 127.1895989],
+                {"bubblingMouseEvents": true, "color": "#51cf40", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#51cf40", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2c619b6abbbd492a9e7f5b8feaa3f18f);
+        
+    
+            circle_marker_ef8e5667cf984e1f98906534d92b1498.bindTooltip(
+                `<div>
+                     압구정김밥
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_334c661c0aab48508d88cafea64f0ccd = L.circleMarker(
+                [36.8307621, 127.1783433],
+                {"bubblingMouseEvents": true, "color": "#51cf40", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#51cf40", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2c619b6abbbd492a9e7f5b8feaa3f18f);
+        
+    
+            circle_marker_334c661c0aab48508d88cafea64f0ccd.bindTooltip(
+                `<div>
+                     수원화로구이
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_bac6d6c6e66244d1ab125dc5c3f11f8c = L.circleMarker(
+                [36.8327685, 127.1881166],
+                {"bubblingMouseEvents": true, "color": "#51cf40", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#51cf40", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2c619b6abbbd492a9e7f5b8feaa3f18f);
+        
+    
+            circle_marker_bac6d6c6e66244d1ab125dc5c3f11f8c.bindTooltip(
+                `<div>
+                     흙사랑
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d5255cd6e3bb473db9733d2c51332946 = L.circleMarker(
+                [36.8328237, 127.1877438],
+                {"bubblingMouseEvents": true, "color": "#51cf40", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#51cf40", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2c619b6abbbd492a9e7f5b8feaa3f18f);
+        
+    
+            circle_marker_d5255cd6e3bb473db9733d2c51332946.bindTooltip(
+                `<div>
+                     언덕위커피나무
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e65d87c6dd344d68a31aa657d7190edb = L.circleMarker(
+                [36.8315095, 127.1744946],
+                {"bubblingMouseEvents": true, "color": "#51cf40", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#51cf40", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2c619b6abbbd492a9e7f5b8feaa3f18f);
+        
+    
+            circle_marker_e65d87c6dd344d68a31aa657d7190edb.bindTooltip(
+                `<div>
+                     맛있네탕수육
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f79cd86ba96d462493a4bc5dcced5f48 = L.circleMarker(
+                [36.8271377, 127.1859543],
+                {"bubblingMouseEvents": true, "color": "#51cf40", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#51cf40", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2c619b6abbbd492a9e7f5b8feaa3f18f);
+        
+    
+            circle_marker_f79cd86ba96d462493a4bc5dcced5f48.bindTooltip(
+                `<div>
+                     산마루손칼국수
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a40c3d7f7d954f829cbf22ba2c891bf0 = L.circleMarker(
+                [36.8337304, 127.1731299],
+                {"bubblingMouseEvents": true, "color": "#51cf40", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#51cf40", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2c619b6abbbd492a9e7f5b8feaa3f18f);
+        
+    
+            circle_marker_a40c3d7f7d954f829cbf22ba2c891bf0.bindTooltip(
+                `<div>
+                     동춘옥
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3b943b4ff5774e938dc14e0ce1ba1462 = L.circleMarker(
+                [36.8377033, 127.1774955],
+                {"bubblingMouseEvents": true, "color": "#51cf40", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#51cf40", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2c619b6abbbd492a9e7f5b8feaa3f18f);
+        
+    
+            circle_marker_3b943b4ff5774e938dc14e0ce1ba1462.bindTooltip(
+                `<div>
+                     오래오래
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d05b34c8d11b403c933c4b62d2e7f251 = L.circleMarker(
+                [36.8320037, 127.1869677],
+                {"bubblingMouseEvents": true, "color": "#51cf40", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#51cf40", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2c619b6abbbd492a9e7f5b8feaa3f18f);
+        
+    
+            circle_marker_d05b34c8d11b403c933c4b62d2e7f251.bindTooltip(
+                `<div>
+                     초당골
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_822e29f5a0ee4ca8bc269bcda3a47766 = L.circleMarker(
+                [36.8313431, 127.1869601],
+                {"bubblingMouseEvents": true, "color": "#51cf40", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#51cf40", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2c619b6abbbd492a9e7f5b8feaa3f18f);
+        
+    
+            circle_marker_822e29f5a0ee4ca8bc269bcda3a47766.bindTooltip(
+                `<div>
+                     산들
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_452964e0ef424c1fb46360b23666433f = L.circleMarker(
+                [36.8303173, 127.1787942],
+                {"bubblingMouseEvents": true, "color": "#51cf40", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#51cf40", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2c619b6abbbd492a9e7f5b8feaa3f18f);
+        
+    
+            circle_marker_452964e0ef424c1fb46360b23666433f.bindTooltip(
+                `<div>
+                     불로만숯불바베큐
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_270dfe66025e467c9f71819e25839e08 = L.circleMarker(
+                [36.83576190000001, 127.1730419],
+                {"bubblingMouseEvents": true, "color": "#51cf40", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#51cf40", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2c619b6abbbd492a9e7f5b8feaa3f18f);
+        
+    
+            circle_marker_270dfe66025e467c9f71819e25839e08.bindTooltip(
+                `<div>
+                     슬로우커피
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_692d5121ab0d4086bd3c6f1705c73194 = L.circleMarker(
+                [36.83008710000001, 127.1797787],
+                {"bubblingMouseEvents": true, "color": "#51cf40", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#51cf40", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2c619b6abbbd492a9e7f5b8feaa3f18f);
+        
+    
+            circle_marker_692d5121ab0d4086bd3c6f1705c73194.bindTooltip(
+                `<div>
+                     스타벅스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_dbdc20e124e64b5f80b5f02f66133834 = L.circleMarker(
+                [36.8327677, 127.1756773],
+                {"bubblingMouseEvents": true, "color": "#51cf40", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#51cf40", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_2c619b6abbbd492a9e7f5b8feaa3f18f);
+        
+    
+            circle_marker_dbdc20e124e64b5f80b5f02f66133834.bindTooltip(
+                `<div>
+                     리프에스프레소
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
