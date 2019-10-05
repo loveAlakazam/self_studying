@@ -2,7 +2,7 @@
 
 (참고 강의자료) https://www.youtube.com/watch?v=ULBbfLBJIoc&list=PLaTc2c6yEwmqLr9aMIWD7LluIGyTzZVVm&index=3
 
-(1) 따릉이1.ipynb <br><br>
+## (1) 따릉이1.ipynb <br><br>
 - 따릉이 데이터를 활용하여, pandas 데이터 처리 연습 - 잘못된 형태의 데이터를 올바르게 표현
 - 이상한 형태의 데이터를 가공 ( df2018_3은  2018년 7월1일 ~ 2018년 12월 31일 까지의 따릉이 기록 로그입니다. )
   - df2018_3 데이터 컬럼 변경 (df2018_2와 동일한 컬럼으로 변경)
